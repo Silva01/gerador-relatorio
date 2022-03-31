@@ -23,7 +23,7 @@ public class GerarRelatorioJob {
     public void start() {
         try {
             service.gerar();
-        } catch (JSONException | JsonProcessingException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
